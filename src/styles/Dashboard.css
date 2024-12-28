@@ -1,0 +1,79 @@
+/* General Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-content p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
